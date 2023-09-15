@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.magnolia.clientmodel:ClientModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.magnolia.clientmodel="http:///com/ibm/magnolia/clientmodel.ecore">
+  <workItemEditorHistory>
+    <internalContents date="2021-12-20T10:37:34.488-0600" description="5682: Code Review for GateWay" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_XKd5YKv4EeqhF5tFm1qJsw"/>
+    </internalContents>
+    <internalContents date="2021-05-27T13:18:32.980-0500" description="6121: Incorrect AC and PC versions when executing TCER &quot;UI_SW_Version_Identification_[2.2]Build_D20201118T1645&quot;" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_UAWLYSprEeuRToSTKsCXFw"/>
+    </internalContents>
+    <internalContents date="2021-05-27T13:18:23.653-0500" description="5404: DI Implementation" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_4BkXcGn7EeqTF-gGZypcsQ"/>
+    </internalContents>
+    <internalContents date="2021-05-27T13:18:17.869-0500" description="5925:  Can’t see control limits on the GUI of 2000Xc " repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_8TvJEPzsEeqokfs8bmq-vg"/>
+    </internalContents>
+    <internalContents date="2021-05-27T13:17:39.771-0500" description="6082: Setup build server for GSX P1 (VxWorks, Qt, NXP)" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_25shgCNoEeug3NPrxgqH1w"/>
+    </internalContents>
+    <internalContents date="2020-11-24T07:37:25.715-0600" description="6051: Ability to add a new language" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_m4YYgBrtEeug3NPrxgqH1w"/>
+    </internalContents>
+    <internalContents date="2020-11-20T08:52:16.225-0600" description="5939: Fundamental structure code" repository="https://Jazz.bucclm.com/ccm/">
+      <workItem itemId="_Z-zYIP7MEeqGGLDi9iIIGg"/>
+    </internalContents>
+  </workItemEditorHistory>
+  <queries/>
+  <queryViews/>
+</com.ibm.magnolia.clientmodel:ClientModelRoot>

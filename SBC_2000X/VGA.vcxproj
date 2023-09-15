@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win7 Release|Win32">
+      <Configuration>Win7 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>2000Xc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>2000Xc</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\VGA.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>.\HPDF_PC\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\VGA.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\VGA.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\2000Xc.exe</OutputFile>
+      <AdditionalDependencies>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\IPHlpApi.Lib;.\HPDF_PC\libhpdf.lib;.\HPDF_PC\zlib.lib;.\HPDF_PC\libpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\VGA.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>.\HPDF_PC\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\VGA.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\VGA.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\VGA.exe</OutputFile>
+      <AdditionalDependencies>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\IPHlpApi.Lib;.\HPDF_PC\libhpdf.lib;.\HPDF_PC\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft SDKs\Windows\v6.0A\Include\IPHlpApi.h;.\HPDF_PC\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\VGA.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\VGA.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\VGA.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\2000Xc.exe</OutputFile>
+      <AdditionalDependencies>C:\Program Files\Microsoft SDKs\Windows\v7.0A\Lib\IPHlpApi.Lib;.\HPDF_PC\libhpdf.lib;.\HPDF_PC\zlib.lib;.\HPDF_PC\libpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlarmButton.cpp" />
+    <ClCompile Include="AlarmLog.cpp" />
+    <ClCompile Include="AlarmLogData.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BitCondition.cpp" />
+    <ClCompile Include="BitmaskVariable.cpp" />
+    <ClCompile Include="BottomHalf.cpp" />
+    <ClCompile Include="Check.cpp" />
+    <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="CommPort.cpp" />
+    <ClCompile Include="Condition.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="EnumCondition.cpp" />
+    <ClCompile Include="EnumVariable.cpp" />
+    <ClCompile Include="EtherPort.cpp" />
+    <ClCompile Include="EventHistoryData.cpp" />
+    <ClCompile Include="EventLog.cpp" />
+    <ClCompile Include="HistoryData.cpp" />
+    <ClCompile Include="HistoryGraphs.cpp" />
+    <ClCompile Include="HostCommand.cpp" />
+    <ClCompile Include="InputDevices.cpp" />
+    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="ListBox.cpp" />
+    <ClCompile Include="LocalChoice.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="MsgScreen.cpp" />
+    <ClCompile Include="Mylanguage.cpp" />
+    <ClCompile Include="PrintText.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="RadioMenu.cpp" />
+    <ClCompile Include="RunScreen.cpp" />
+    <ClCompile Include="SBC.cpp" />
+    <ClCompile Include="ScreenKeypad.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="TcpSocket.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TextIOFile.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Toggle.cpp" />
+    <ClCompile Include="USBFolder.cpp" />
+    <ClCompile Include="UserID.cpp" />
+    <ClCompile Include="UserIDTable.cpp" />
+    <ClCompile Include="UserIDTableData.cpp" />
+    <ClCompile Include="Variable.cpp" />
+    <ClCompile Include="VGA.cpp" />
+    <ClCompile Include="VGAAdd_Back_Next_Button.cpp" />
+    <ClCompile Include="VgaAlphanumeric.cpp" />
+    <ClCompile Include="VgaBottomMenu.cpp" />
+    <ClCompile Include="VgaButton.cpp" />
+    <ClCompile Include="VgaChoice.cpp" />
+    <ClCompile Include="VgaCompareGraph.cpp" />
+    <ClCompile Include="VgaDigitalInput.cpp" />
+    <ClCompile Include="VgaDrawGraph.cpp" />
+    <ClCompile Include="VgaMenu.cpp" />
+    <ClCompile Include="VgaMenuItem.cpp" />
+    <ClCompile Include="VgaRadioButton.cpp" />
+    <ClCompile Include="VgaScreenSetup.cpp" />
+    <ClCompile Include="VgaSubMenu.cpp" />
+    <ClCompile Include="VgaTitle.cpp" />
+    <ClCompile Include="VgaVariable.cpp" />
+    <ClCompile Include="VgaViewPreset.cpp" />
+    <ClCompile Include="WeldingData.cpp" />
+    <ClCompile Include="WeldingHistory.cpp" />
+    <ClCompile Include="XmlElement.cpp" />
+    <ClCompile Include="XmlFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SBC.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="VGA.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlarmLog.h" />
+    <ClInclude Include="AlarmLogData.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="BitCondition.h" />
+    <ClInclude Include="BitmaskVariable.h" />
+    <ClInclude Include="BottomHalf.h" />
+    <ClInclude Include="BottomMenu.h" />
+    <ClInclude Include="Check.h" />
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="CommPort.h" />
+    <ClInclude Include="Condition.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="EnumCondition.h" />
+    <ClInclude Include="EnumVariable.h" />
+    <ClInclude Include="EtherPort.h" />
+    <ClInclude Include="EventHistoryData.h" />
+    <ClInclude Include="EventLog.h" />
+    <ClInclude Include="HistoryData.h" />
+    <ClInclude Include="HistoryGraphs.h" />
+    <ClInclude Include="HostCommand.h" />
+    <ClInclude Include="InputDevices.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="ListBox.h" />
+    <ClInclude Include="LocalChoice.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="MsgScreen.h" />
+    <ClInclude Include="Mylanguage.h" />
+    <ClInclude Include="newres.h" />
+    <ClInclude Include="ObjectList.h" />
+    <ClInclude Include="ObjectMap.h" />
+    <ClInclude Include="Pointer.h" />
+    <ClInclude Include="PrintText.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="RadioMenu.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RunScreen.h" />
+    <ClInclude Include="SBC.h" />
+    <ClInclude Include="ScreenKeypad.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="TcpSocket.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="TextIOFile.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Toggle.h" />
+    <ClInclude Include="USBFolder.h" />
+    <ClInclude Include="UserID.h" />
+    <ClInclude Include="UserIDTable.h" />
+    <ClInclude Include="UserIDTableData.h" />
+    <ClInclude Include="Variable.h" />
+    <ClInclude Include="VGA.h" />
+    <ClInclude Include="VGAAdd_Back_Next_Button.h" />
+    <ClInclude Include="VgaAlphanumeric.h" />
+    <ClInclude Include="VgaBottomMenu.h" />
+    <ClInclude Include="VgaButton.h" />
+    <ClInclude Include="VgaChoice.h" />
+    <ClInclude Include="VgaCompareGraph.h" />
+    <ClInclude Include="VgaDigitalInput.h" />
+    <ClInclude Include="VgaDrawGraph.h" />
+    <ClInclude Include="VgaMenu.h" />
+    <ClInclude Include="VgaMenuItem.h" />
+    <ClInclude Include="VgaRadioButton.h" />
+    <ClInclude Include="VgaScreenSetup.h" />
+    <ClInclude Include="VgaSubMenu.h" />
+    <ClInclude Include="VgaTitle.h" />
+    <ClInclude Include="VgaVariable.h" />
+    <ClInclude Include="VgaViewPreset.h" />
+    <ClInclude Include="WeldingData.h" />
+    <ClInclude Include="WeldingHistory.h" />
+    <ClInclude Include="XmlElement.h" />
+    <ClInclude Include="XmlFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="res\VGA.ico" />
+    <CustomBuild Include="res\VGA.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

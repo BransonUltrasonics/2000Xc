@@ -1,0 +1,19 @@
+Implementation of Data Interface Controller (DIC)
+
+Files Modified
+- main.cpp (Initialization of DITask)
+- command.cpp (Buttons added and change in WC IP address calculation)
+- WeldManagerTask.cpp (call to SetTrigger() and FormatDateTime())
+
+Files Created
+- DIButtons.cpp (definitions for new added buttons)
+- DIComm.cpp (Implementation of communications)
+- DIComm2000Xc.cpp (Wrapper for communications in 2000Xc)
+- DIPrint.cpp (Auxiliary for debuging, prints on RS232 port)
+- DIProtocol.cpp (Implementation of BUC communications protocol)
+- DIProtocolInterface.cpp (Wrapper for protocol in 2000Xc)
+- DITask.cpp (Implementation of the thread that calls communication functions)
+
+Notes:
+1. DIBUC_Protocol.a library is still not used, instead DIProtocol.cpp is used equivalently
+2. Changes for FRAM are in a different project still pending to be added 

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2000Xc", "VGA.vcxproj", "{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "2000XcSetup", "2000XcSetup\2000XcSetup.vdproj", "{B553C8E7-8CEF-4F70-B5DA-2C4265E11F55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+		Win7 Release|Win32 = Win7 Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Debug|Win32.Build.0 = Debug|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Release|Win32.ActiveCfg = Release|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Release|Win32.Build.0 = Release|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Template|Win32.ActiveCfg = Template|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Template|Win32.Build.0 = Template|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Win7 Release|Win32.ActiveCfg = Win7 Release|Win32
+		{989AB86A-CB97-71AC-FFEA-B20C91CBF7E2}.Win7 Release|Win32.Build.0 = Win7 Release|Win32
+		{B553C8E7-8CEF-4F70-B5DA-2C4265E11F55}.Debug|Win32.ActiveCfg = Debug
+		{B553C8E7-8CEF-4F70-B5DA-2C4265E11F55}.Release|Win32.ActiveCfg = Release
+		{B553C8E7-8CEF-4F70-B5DA-2C4265E11F55}.Template|Win32.ActiveCfg = Release
+		{B553C8E7-8CEF-4F70-B5DA-2C4265E11F55}.Win7 Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

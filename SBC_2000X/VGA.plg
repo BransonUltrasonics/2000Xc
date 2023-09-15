@@ -1,0 +1,163 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VGA - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP35F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_UNICODE" /FR"Release/" /Fp"Release/VGA.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Ankur\from Yugal\Feb 14\SBCcode15Feb\SBC_ethernet\VgaRadioButton.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP35F.tmp" 
+Creating temporary file "C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP360.tmp" with contents
+[
+"C:\Program Files\Microsoft SDK\Lib\IPHlpApi.Lib" /nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"Release/VGA.pdb" /machine:I386 /out:"Release/VGA.exe" 
+".\Release\AlarmButton.obj"
+".\Release\Application.obj"
+".\Release\BitCondition.obj"
+".\Release\BitmaskVariable.obj"
+".\Release\BottomHalf.obj"
+".\Release\Check.obj"
+".\Release\ChildView.obj"
+".\Release\ClientSocket.obj"
+".\Release\CommPort.obj"
+".\Release\Condition.obj"
+".\Release\Connection.obj"
+".\Release\Date.obj"
+".\Release\EnumCondition.obj"
+".\Release\EnumVariable.obj"
+".\Release\EtherPort.obj"
+".\Release\HistoryData.obj"
+".\Release\HistoryGraphs.obj"
+".\Release\HostCommand.obj"
+".\Release\Line.obj"
+".\Release\ListBox.obj"
+".\Release\LocalChoice.obj"
+".\Release\MainFrame.obj"
+".\Release\MsgScreen.obj"
+".\Release\Mylanguage.obj"
+".\Release\PrintText.obj"
+".\Release\Queue.obj"
+".\Release\RadioMenu.obj"
+".\Release\RunScreen.obj"
+".\Release\SBC.obj"
+".\Release\ScreenKeypad.obj"
+".\Release\ServerSocket.obj"
+".\Release\StdAfx.obj"
+".\Release\Table.obj"
+".\Release\TcpSocket.obj"
+".\Release\Text.obj"
+".\Release\TextBox.obj"
+".\Release\TextIOFile.obj"
+".\Release\Time.obj"
+".\Release\Toggle.obj"
+".\Release\USBFolder.obj"
+".\Release\Variable.obj"
+".\Release\VGA.obj"
+".\Release\VGAAdd_Back_Next_Button.obj"
+".\Release\VgaAlphanumeric.obj"
+".\Release\VgaBottomMenu.obj"
+".\Release\VgaButton.obj"
+".\Release\VgaChoice.obj"
+".\Release\VgaCompareGraph.obj"
+".\Release\VgaDigitalInput.obj"
+".\Release\VgaDrawGraph.obj"
+".\Release\VgaMenu.obj"
+".\Release\VgaMenuItem.obj"
+".\Release\VgaRadioButton.obj"
+".\Release\VgaScreenSetup.obj"
+".\Release\VgaSubMenu.obj"
+".\Release\VgaTitle.obj"
+".\Release\VgaVariable.obj"
+".\Release\VgaViewPreset.obj"
+".\Release\WeldingData.obj"
+".\Release\WeldingHistory.obj"
+".\Release\XmlElement.obj"
+".\Release\XmlFile.obj"
+".\Release\VGA.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP360.tmp"
+<h3>Output Window</h3>
+Compiling...
+VgaRadioButton.cpp
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+Creating temporary file "C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP362.tmp" with contents
+[
+/nologo /o"Release/VGA.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\AlarmButton.sbr"
+".\Release\Application.sbr"
+".\Release\BitCondition.sbr"
+".\Release\BitmaskVariable.sbr"
+".\Release\BottomHalf.sbr"
+".\Release\Check.sbr"
+".\Release\ChildView.sbr"
+".\Release\ClientSocket.sbr"
+".\Release\CommPort.sbr"
+".\Release\Condition.sbr"
+".\Release\Connection.sbr"
+".\Release\Date.sbr"
+".\Release\EnumCondition.sbr"
+".\Release\EnumVariable.sbr"
+".\Release\EtherPort.sbr"
+".\Release\HistoryData.sbr"
+".\Release\HistoryGraphs.sbr"
+".\Release\HostCommand.sbr"
+".\Release\Line.sbr"
+".\Release\ListBox.sbr"
+".\Release\LocalChoice.sbr"
+".\Release\MainFrame.sbr"
+".\Release\MsgScreen.sbr"
+".\Release\Mylanguage.sbr"
+".\Release\PrintText.sbr"
+".\Release\Queue.sbr"
+".\Release\RadioMenu.sbr"
+".\Release\RunScreen.sbr"
+".\Release\SBC.sbr"
+".\Release\ScreenKeypad.sbr"
+".\Release\ServerSocket.sbr"
+".\Release\Table.sbr"
+".\Release\TcpSocket.sbr"
+".\Release\Text.sbr"
+".\Release\TextBox.sbr"
+".\Release\TextIOFile.sbr"
+".\Release\Time.sbr"
+".\Release\Toggle.sbr"
+".\Release\USBFolder.sbr"
+".\Release\Variable.sbr"
+".\Release\VGA.sbr"
+".\Release\VGAAdd_Back_Next_Button.sbr"
+".\Release\VgaAlphanumeric.sbr"
+".\Release\VgaBottomMenu.sbr"
+".\Release\VgaButton.sbr"
+".\Release\VgaChoice.sbr"
+".\Release\VgaCompareGraph.sbr"
+".\Release\VgaDigitalInput.sbr"
+".\Release\VgaDrawGraph.sbr"
+".\Release\VgaMenu.sbr"
+".\Release\VgaMenuItem.sbr"
+".\Release\VgaRadioButton.sbr"
+".\Release\VgaScreenSetup.sbr"
+".\Release\VgaSubMenu.sbr"
+".\Release\VgaTitle.sbr"
+".\Release\VgaVariable.sbr"
+".\Release\VgaViewPreset.sbr"
+".\Release\WeldingData.sbr"
+".\Release\WeldingHistory.sbr"
+".\Release\XmlElement.sbr"
+".\Release\XmlFile.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\AMaurya\LOCALS~1\Temp\RSP362.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VGA.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
